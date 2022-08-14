@@ -25,6 +25,7 @@ hiltVersion = "2.42"
 hiltExtVersion = "1.0.0"
 junitVersion = "4.13.2"
 kotlinVersion = "1.7.10"
+ksp = "1.7.10-1.0.6"
 ktxVersion = "1.8.0"
 ktlint = "0.43.0"
 lifecycleVersion = "2.5.1"
@@ -108,3 +109,4 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version.ref =
 spotless-gradlePlugin = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotless" }
 
 [plugins]
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
