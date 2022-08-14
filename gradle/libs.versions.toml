@@ -1,0 +1,110 @@
+[versions]
+androidDesugarJdkLibs = "1.1.5"
+activityComposeVersion = "1.5.1"
+androidxHiltNavigationCompose = "1.0.0"
+androidxNavigation = "2.5.1"
+androidxSavedState = "1.2.0"
+androidxTest = "1.4.0"
+androidxMetrics = "1.0.0-alpha01"
+appCompatVersion = "1.5.0"
+androidxComposeCompiler = "1.3.0"
+androidxCustomView = "1.0.0-rc01"
+benchmarkVersion = "1.1.0"
+coilVersion = "2.1.0"
+composeThemeAdapterVersion = "1.1.15"
+composeVersion = "1.2.1"
+constraintLayoutComposeVersion = "1.0.1"
+constraintLayoutVersion = "2.1.4"
+coreTestingVersion = "2.1.0"
+coroutinesVersion = "1.6.3"
+espressoVersion = "3.4.0"
+fragmentVersion = "1.5.2"
+gradleVersion = "7.2.0"
+gsonVersion = "2.9.0"
+hiltVersion = "2.42"
+hiltExtVersion = "1.0.0"
+junitVersion = "4.13.2"
+kotlinVersion = "1.7.10"
+ktxVersion = "1.8.0"
+ktlint = "0.43.0"
+lifecycleVersion = "2.5.1"
+materialVersion = "1.6.1"
+material3Version = "1.0.0-alpha14"
+navigationVersion = "2.5.1"
+okhttpLoggingVersion = "4.10.0"
+pagingVersion = "3.1.1"
+profileInstallerVersion = "1.2.0"
+retrofitVersion = "2.9.0"
+roomVersion = "2.4.3"
+spotless = "6.7.2"
+testExtJunit = "1.1.3"
+tracingVersion = "1.1.0"
+truthVersion = "1.1.3"
+uiAutomatorVersion = "2.2.0"
+viewModelComposeVersion = "2.5.1"
+viewPagerVersion = "1.0.0"
+workVersion = "2.7.1"
+
+[libraries]
+android-desugarJdkLibs = { group = "com.android.tools", name = "desugar_jdk_libs", version.ref = "androidDesugarJdkLibs" }
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "gradleVersion" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityComposeVersion" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appCompatVersion" }
+androidx-benchmark-macro = { group = "androidx.benchmark", name = "benchmark-macro-junit4", version.ref = "benchmarkVersion" }
+androidx-compose-foundation = { group = "androidx.compose.foundation", name = "foundation", version.ref = "composeVersion" }
+androidx-compose-foundation-layout = { group = "androidx.compose.foundation", name = "foundation-layout", version.ref = "composeVersion" }
+androidx-compose-material-iconsExtended = { group = "androidx.compose.material", name = "material-icons-extended", version.ref = "composeVersion" }
+androidx-compose-material3 = { group = "androidx.compose.material3", name = "material3", version.ref = "material3Version" }
+androidx-compose-material3-windowSizeClass = {group = "androidx.compose.material3", name = "material3-window-size-class", version.ref="material3Version"}
+androidx-compose-runtime = { group = "androidx.compose.runtime", name = "runtime", version.ref = "composeVersion" }
+androidx-compose-runtime-livedata = { group = "androidx.compose.runtime", name = "runtime-livedata", version.ref = "composeVersion" }
+androidx-compose-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "composeVersion" }
+androidx-compose-ui-test = { group = "androidx.compose.ui", name = "ui-test-junit4", version.ref = "composeVersion" }
+androidx-compose-ui-testManifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version.ref = "composeVersion" }
+androidx-compose-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling", version.ref = "composeVersion" }
+androidx-compose-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview", version.ref = "composeVersion" }
+androidx-compose-ui-util = { group = "androidx.compose.ui", name = "ui-util", version.ref = "composeVersion" }
+androidx-compose-ui-viewbinding = { group = "androidx.compose.ui", name = "ui-viewbinding", version.ref = "composeVersion" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "ktxVersion" }
+androidx-customview-poolingcontainer = { group = "androidx.customview", name = "customview-poolingcontainer", version.ref = "androidxCustomView"}
+androidx-hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-compose", version.ref = "androidxHiltNavigationCompose" }
+androidx-lifecycle-runtimeCompose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose", version.ref = "lifecycleVersion" }
+androidx-lifecycle-viewModelCompose = { group = "androidx.lifecycle", name = "lifecycle-viewmodel-compose", version.ref = "lifecycleVersion" }
+androidx-metrics = { group = "androidx.metrics", name = "metrics-performance", version.ref = "androidxMetrics" }
+androidx-navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "androidxNavigation" }
+androidx-navigation-testing = { group = "androidx.navigation", name = "navigation-testing", version.ref = "androidxNavigation" }
+androidx-profileinstaller = { group = "androidx.profileinstaller", name = "profileinstaller", version.ref = "profileInstallerVersion" }
+androidx-savedstate-ktx = { group = "androidx.savedstate", name = "savedstate-ktx", version.ref= "androidxSavedState"}
+androidx-test-core = { group = "androidx.arch.core", name = "core-testing", version.ref = "coreTestingVersion" }
+androidx-test-ext = { group = "androidx.test.ext", name = "junit", version.ref = "coreTestingVersion" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoVersion" }
+androidx-test-runner = { group = "androidx.test", name = "runner", version.ref = "androidxTest" }
+androidx-test-rules = { group = "androidx.test", name = "rules", version.ref = "androidxTest" }
+androidx-test-uiautomator = { group = "androidx.test.uiautomator", name = "uiautomator", version.ref = "uiAutomatorVersion" }
+androidx-tracing-ktx = {group = "androidx.tracing", name="tracing-ktx", version.ref = "tracingVersion" }
+androidx-work-ktx = { group = "androidx.work", name = "work-runtime-ktx", version.ref = "workVersion" }
+androidx-work-testing = { group = "androidx.work", name = "work-testing", version.ref = "workVersion" }
+coil-kt = { group = "io.coil-kt", name = "coil", version.ref = "coilVersion"}
+coil-kt-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coilVersion"}
+hilt-android = { group = "com.google.dagger", name = "hilt-android", version.ref = "hiltVersion" }
+hilt-ext-compiler = { group = "androidx.hilt", name = "hilt-compiler", version.ref = "hiltExtVersion" }
+hilt-compiler = { group = "com.google.dagger", name = "hilt-android-compiler", version.ref = "hiltVersion" }
+hilt-android-testing = { group = "com.google.dagger", name = "hilt-android-testing", version.ref = "hiltVersion" }
+hilt-gradlePlugin = { group = "com.google.dagger", name = "hilt-android-gradle-plugin", version.ref = "hiltVersion" }
+junit4 = { group = "junit", name = "junit", version.ref = "junitVersion" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlinVersion" }
+kotlin-serializationPlugin = { group = "org.jetbrains.kotlin", name = "kotlin-serialization", version.ref = "kotlinVersion" }
+kotlin-stdlib = { group = "org.jetbrains.kotlin", name = "kotlin-stdlib-jdk8", version.ref = "kotlinVersion" }
+kotlinx-coroutines-android = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-android", version.ref = "coroutinesVersion" }
+kotlinx-coroutines-test = { group = "org.jetbrains.kotlinx", name = "kotlinx-coroutines-test", version.ref = "coroutinesVersion" }
+gson = { group = "com.google.code.gson", name = "gson", version.ref = "gsonVersion" }
+material3 = { group = "com.google.android.material", name = "material", version.ref = "materialVersion" }
+okhttp-logging = { group = "com.squareup.okhttp3", name = "logging-interceptor", version.ref = "okhttpLoggingVersion" }
+retrofit-core = { group = "com.squareup.retrofit2", name = "retrofit", version.ref = "retrofitVersion" }
+retrofit-gson_converter = { group = "com.squareup.retrofit2", name = "converter-gson", version.ref = "retrofitVersion" }
+room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomVersion" }
+room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomVersion" }
+room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomVersion" }
+spotless-gradlePlugin = { group = "com.diffplug.spotless", name = "spotless-plugin-gradle", version.ref = "spotless" }
+
+[plugins]
