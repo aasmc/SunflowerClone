@@ -1,6 +1,7 @@
 package ru.aasmc.sunflowerclone.core.database.model
 
 import androidx.room.*
+import ru.aasmc.sunflowerclone.core.model.data.GardenPlanting
 import java.util.*
 
 /**
@@ -33,4 +34,13 @@ data class GardenPlantingEntity(
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
     var gardenPlantingId: Long = 0
+}
+
+fun GardenPlantingEntity.asDomainModel() : GardenPlanting {
+    return GardenPlanting(
+        gardenPlantingId = gardenPlantingId,
+        plantId = plantId,
+        plantDate = plantDate,
+        lastWateringDate = lastWateringDate
+    )
 }
