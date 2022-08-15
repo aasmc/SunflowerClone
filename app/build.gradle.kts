@@ -79,8 +79,7 @@ android {
 }
 
 dependencies {
-    androidTestImplementation(libs.androidx.navigation.testing)
-    debugImplementation(libs.androidx.compose.ui.testManifest)
+    implementation(project(":core-designsystem"))
 
     implementation(libs.androidx.activity.compose)
     implementation(libs.androidx.appcompat)
@@ -95,6 +94,9 @@ dependencies {
     kapt(libs.hilt.compiler)
     kaptAndroidTest(libs.hilt.compiler)
 
+    androidTestImplementation(libs.androidx.navigation.testing)
+    debugImplementation(libs.androidx.compose.ui.testManifest)
+    
     // androidx.test is forcing JUnit, 4.12. This forces it to use 4.13
     configurations.configureEach {
         resolutionStrategy {

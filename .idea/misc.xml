@@ -3,7 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1" />
         <entry key="core-common/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/garden_tab_selector.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_detail_back.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_detail_back_no_circle.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_detail_share.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_filter_list_24dp.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_my_garden_active.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_my_garden_inactive.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_photo_library.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_plant_list_active.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_plant_list_inactive.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/ic_plus.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/plant_list_tab_selector.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/drawable/tab_icon_color_selector.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/menu/menu_plant_detail.xml" value="0.1" />
+        <entry key="core-designsystem/src/main/res/menu/menu_plant_list.xml" value="0.1" />
       </map>
     </option>
   </component>
