@@ -49,6 +49,7 @@ abstract class AppDatabase : RoomDatabase() {
                             super.onCreate(db)
                             val request = OneTimeWorkRequestBuilder<SeedDatabaseWorker>()
                                 .setInputData(workDataOf(KEY_FILENAME to PLANT_DATA_FILENAME))
+                                .addTag("SEED DATABASE")
                                 .build()
                             WorkManager.getInstance(context).enqueue(request)
                         }

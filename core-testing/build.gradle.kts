@@ -1,12 +1,12 @@
 plugins {
     id("sunflowerclone.android.library")
     kotlin("kapt")
-    id("sunflowerclone.spotless")
+//    id("sunflowerclone.spotless")
 }
 
 dependencies {
-//    implementation(project(":core-common"))
-//    implementation(project(":core-data"))
+    implementation(project(":core-common"))
+    implementation(project(":core-data"))
     implementation(project(":core-model"))
 
     implementation(libs.hilt.android)

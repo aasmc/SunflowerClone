@@ -2,7 +2,7 @@ plugins {
     id("sunflowerclone.android.library")
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
-    id("sunflowerclone.spotless")
+//    id("sunflowerclone.spotless")
 }
 
 dependencies {

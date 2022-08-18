@@ -1,7 +1,7 @@
 plugins {
     id("sunflowerclone.android.library")
     kotlin("kapt")
-    id("sunflowerclone.spotless")
+//    id("sunflowerclone.spotless")
 }
 
 dependencies {

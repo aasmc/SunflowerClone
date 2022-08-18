@@ -5,7 +5,7 @@ plugins {
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
     alias(libs.plugins.ksp)
-    id("sunflowerclone.spotless")
+//    id("sunflowerclone.spotless")
 }
 
 android {
@@ -35,6 +35,7 @@ dependencies {
 
     implementation(libs.hilt.android)
     kapt(libs.hilt.compiler)
+    implementation("androidx.hilt:hilt-work:1.0.0")
 
     androidTestImplementation(project(":core-testing"))
 }

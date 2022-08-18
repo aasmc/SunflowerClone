@@ -4,6 +4,7 @@ import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
 import kotlinx.coroutines.flow.Flow
+import ru.aasmc.sunflowerclone.core.model.data.UnsplashPhoto
 import ru.aasmc.sunflowerclone.core.network.model.UnsplashPhotoDto
 import ru.aasmc.sunflowerclone.core.network.retrofit.UnsplashService
 import javax.inject.Inject
@@ -11,7 +12,7 @@ import javax.inject.Inject
 class UnsplashRepositoryImpl @Inject constructor(
     private val service: UnsplashService
 ) : UnsplashRepository {
-    override fun getSearchResultStream(query: String): Flow<PagingData<UnsplashPhotoDto>> {
+    override fun getSearchResultStream(query: String): Flow<PagingData<UnsplashPhoto>> {
         return Pager(
             config = PagingConfig(
                 enablePlaceholders = false,

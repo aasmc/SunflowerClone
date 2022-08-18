@@ -6,7 +6,8 @@ plugins {
     id("sunflowerclone.android.application.compose")
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
-    id("sunflowerclone.spotless")
+//    id("sunflowerclone.spotless")
+    id("androidx.navigation.safeargs")
 }
 
 android {
@@ -80,23 +81,65 @@ android {
 
 dependencies {
     implementation(project(":core-designsystem"))
+    implementation(project(":core-common"))
+    implementation(project(":core-data"))
+    implementation(project(":core-database"))
+    implementation(project(":core-model"))
+    implementation(project(":core-network"))
+    implementation(project(":core-testing"))
+
+    implementation(libs.androidx.appcompat)
+    implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.core.ktx)
+    implementation(libs.androidx.fragment)
+    implementation(libs.androidx.lifecycle.livedata)
+    implementation(libs.androidx.lifecycle.viewmodel)
+    implementation(libs.androidx.navigation.fragment)
+    implementation(libs.androidx.navigation.ui)
+    implementation(libs.androidx.paging)
+    implementation(libs.androidx.viewpager)
+    implementation(libs.kotlinx.coroutines.android)
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.androidx.tracing.ktx)
 
     implementation(libs.androidx.activity.compose)
-    implementation(libs.androidx.appcompat)
-    implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.compose.material3.windowSizeClass)
+    implementation(libs.androidx.compose.constraintlayout)
+    implementation(libs.androidx.compose.runtime)
+    implementation(libs.androidx.compose.ui)
+    implementation(libs.androidx.compose.foundation)
+    implementation(libs.androidx.compose.foundation.layout)
+    implementation(libs.androidx.compose.material.version2)
+    implementation(libs.androidx.compose.ui.viewbinding)
+    implementation(libs.androidx.compose.ui.tooling)
+    implementation(libs.androidx.compose.ui.tooling.preview)
+    implementation(libs.androidx.compose.runtime.livedata)
+    implementation(libs.androidx.lifecycle.viewModelCompose)
+    implementation(libs.material.theme.adapter)
+    implementation(libs.coil.kt.compose)
+    implementation(libs.androidx.work.ktx)
     implementation(libs.material3)
     implementation(libs.androidx.profileinstaller)
 
     implementation(libs.coil.kt)
 
     implementation(libs.hilt.android)
+    implementation("androidx.hilt:hilt-work:1.0.0")
     kapt(libs.hilt.compiler)
     kaptAndroidTest(libs.hilt.compiler)
 
     androidTestImplementation(libs.androidx.navigation.testing)
+    androidTestImplementation(libs.androidx.test.core)
+    androidTestImplementation(libs.androidx.test.ext)
+    androidTestImplementation(libs.androidx.test.espresso.core)
+    androidTestImplementation(libs.androidx.test.espresso.contrib)
+    androidTestImplementation(libs.androidx.test.espresso.intents)
+    androidTestImplementation(libs.androidx.test.uiautomator)
+    androidTestImplementation(libs.truth.assertions)
+    androidTestImplementation(libs.kotlinx.coroutines.test)
+    androidTestImplementation(libs.hilt.android.testing)
+    androidTestImplementation(libs.androidx.compose.ui.test)
     debugImplementation(libs.androidx.compose.ui.testManifest)
-    
+
     // androidx.test is forcing JUnit, 4.12. This forces it to use 4.13
     configurations.configureEach {
         resolutionStrategy {
@@ -105,6 +148,7 @@ dependencies {
             force("org.objenesis:objenesis:2.6")
         }
     }
+    testImplementation(libs.junit4)
 }
 
 fun getUnsplashAccess(): String {

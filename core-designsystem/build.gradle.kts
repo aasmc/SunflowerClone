@@ -1,7 +1,7 @@
 plugins {
     id("sunflowerclone.android.library")
     id("sunflowerclone.android.library.compose")
-    id("sunflowerclone.spotless")
+//    id("sunflowerclone.spotless")
 }
 
 android {
@@ -12,15 +12,14 @@ android {
 
 dependencies {
     implementation(libs.androidx.core.ktx)
-    api(libs.material3)
     api(libs.androidx.compose.foundation)
     api(libs.androidx.compose.foundation.layout)
-    api(libs.androidx.compose.material.iconsExtended)
-    api(libs.androidx.compose.material3)
+    api(libs.androidx.compose.material.version2)
     debugApi(libs.androidx.compose.ui.tooling)
     api(libs.androidx.compose.ui.tooling.preview)
     api(libs.androidx.compose.ui.util)
     api(libs.androidx.compose.runtime)
+    api(libs.material3)
     androidTestImplementation(project(":core-testing"))
 
     // These dependencies are currently necessary to render Compose previews

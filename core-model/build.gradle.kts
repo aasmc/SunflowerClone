@@ -1,5 +1,5 @@
 
 plugins {
     id("kotlin")
-    id("sunflowerclone.spotless")
+//    id("sunflowerclone.spotless")
 }

@@ -33,10 +33,6 @@ gradlePlugin {
             id = "sunflowerclone.android.library"
             implementationClass = "AndroidLibraryConventionPlugin"
         }
-        register("androidFeature") {
-            id = "sunflowerclone.android.feature"
-            implementationClass = "AndroidFeatureConventionPlugin"
-        }
         register("androidTest") {
             id = "sunflowerclone.android.test"
             implementationClass = "AndroidTestConventionPlugin"
